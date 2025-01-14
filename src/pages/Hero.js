@@ -1,6 +1,8 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
 import HancWavePng from "../assets/waving-hand-sign_emoji-modifier-fitzpatrick-type-1-2_1f44b-1f3fb_1f3fb.png";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 function Hero() {
   return (
@@ -29,6 +31,25 @@ function Hero() {
                 user-friendly solutions, I thrive on turning complex ideas into
                 high-quality software that delivers real-world impact.
               </p>
+            </div>
+            <div className="flex justify-center gap-4 mt-6">
+              <a href="https://example.com">
+                <span class="btn btn--outline">Resume</span>
+              </a>
+              <a
+                href="https://github.com/ashen99"
+                aria-label="github"
+                className="text-[#444444] hover:text-[#2978b5] relative after:bg-[#2978b5] after:absolute after:h-1 after:w-0 after:bottom-[-10px] after:left-0 after:transition-all after:duration-500 after:delay-100 hover:after:w-full cursor-pointer mr-4"
+              >
+                <FaGithub size={45} />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/ashen-perera-834747195/"
+                aria-label="FaLinkedin"
+                className="text-[#444444] hover:text-[#2978b5] relative after:bg-[#2978b5] after:absolute after:h-1 after:w-0 after:bottom-[-10px] after:left-0 after:transition-all after:duration-500 after:delay-100 hover:after:w-full cursor-pointer mr-4"
+              >
+                <FaLinkedin size={45} />
+              </a>
             </div>
           </div>
         </div>

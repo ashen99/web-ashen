@@ -25,13 +25,13 @@ const Navbar = () => {
         <nav className="flex items-center gap-6">
           <ul className={`flex gap-6 items-center ${isMenuOpen ? 'flex' : 'hidden md:flex'}`}>
             <li>
-              <a href="#projects" className="text-[#444444] hover:text-[#2978b5] relative after:bg-[#2978b5] after:absolute after:h-1 after:w-0 after:bottom-[-10px] after:left-0 after:transition-all after:duration-500 after:delay-100 hover:after:w-full cursor-pointer">projects</a>
+              <a href="#projects" className="font-medium text-[#444444] hover:text-[#2978b5] relative after:bg-[#2978b5] after:absolute after:h-1 after:w-0 after:bottom-[-10px] after:left-0 after:transition-all after:duration-500 after:delay-100 hover:after:w-full cursor-pointer">projects</a>
             </li>
             <li>
-              <a href="#skills" className="text-[#444444] hover:text-[#2978b5] relative after:bg-[#2978b5] after:absolute after:h-1 after:w-0 after:bottom-[-10px] after:left-0 after:transition-all after:duration-500 after:delay-100 hover:after:w-full cursor-pointer">skills</a>
+              <a href="#skills" className="font-medium text-[#444444] hover:text-[#2978b5] relative after:bg-[#2978b5] after:absolute after:h-1 after:w-0 after:bottom-[-10px] after:left-0 after:transition-all after:duration-500 after:delay-100 hover:after:w-full cursor-pointer">skills</a>
             </li>
             <li>
-              <a href="#contact" className="text-[#444444] hover:text-[#2978b5] relative after:bg-[#2978b5] after:absolute after:h-1 after:w-0 after:bottom-[-10px] after:left-0 after:transition-all after:duration-500 after:delay-100 hover:after:w-full cursor-pointer">contact</a>
+              <a href="#contact" className="font-medium text-[#444444] hover:text-[#2978b5] relative after:bg-[#2978b5] after:absolute after:h-1 after:w-0 after:bottom-[-10px] after:left-0 after:transition-all after:duration-500 after:delay-100 hover:after:w-full cursor-pointer">contact</a>
             </li>
           </ul>
 
