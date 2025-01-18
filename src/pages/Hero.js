@@ -3,14 +3,15 @@ import Navbar from "../Components/Navbar";
 import HancWavePng from "../assets/waving-hand-sign_emoji-modifier-fitzpatrick-type-1-2_1f44b-1f3fb_1f3fb.png";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import Projects from "../Components/Projects";
 
 function Hero() {
   return (
     <div>
       <Navbar />
-      <div className="hero min-h-screen">
+      <div className="hero min-h-screen pt-24">
         <div className="hero-content text-center">
-          <div className="max-w-4xl">
+          <div className="max-w-4xl mx-auto px-4 my-[70px]">
             <div className="flex items-center justify-center gap-4">
               <img
                 src={HancWavePng}
@@ -51,6 +52,7 @@ function Hero() {
                 <FaLinkedin size={45} />
               </a>
             </div>
+            <Projects />
           </div>
         </div>
       </div>
