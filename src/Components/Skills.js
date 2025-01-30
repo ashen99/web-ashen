@@ -6,14 +6,20 @@ const Skills = () => {
   if (!skills.length) return null;
 
   return (
-    <section className="max-w-[450px] w-[95%] mx-auto my-24">
+    <section className="max-w-[450px] mx-auto my-24">
       <h2 className="text-primary text-3xl font-bold mb-12 text-center w-full relative after:bg-[#2978b5] after:absolute after:h-1.5 after:w-16 after:bottom-[-8px] after:left-1/2 after:-translate-x-1/2">
         SKILLS
       </h2>
-      <ul className="flex flex-wrap justify-center">
+      {/* Skills List */}
+      <ul className="flex flex-wrap justify-center gap-1">
         {skills.map((skill) => (
-          <li key={uniqid()} className="p-4">
-            <span className="bg-base-100 text-blue-600 px-4 py-4 text-sm shadow-custom-light">
+          <li key={uniqid()} className="p-2">
+            <span
+              className="bg-white px-6 py-3 text-md font-medium 
+                             shadow-custom-light flex items-center 
+                             justify-center transition-transform duration-300 ease-in-out 
+                             hover:shadow-lg hover:-translate-y-1"
+            >
               {skill}
             </span>
           </li>
