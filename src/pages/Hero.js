@@ -1,9 +1,10 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
-import HancWavePng from "../assets/waving-hand-sign_emoji-modifier-fitzpatrick-type-1-2_1f44b-1f3fb_1f3fb.png";
+import HandWavePng from "../assets/waving-hand-sign_emoji-modifier-fitzpatrick-type-1-2_1f44b-1f3fb_1f3fb.png";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import Projects from "../Components/Projects";
+import Skills from "../Components/Skills";
 
 function Hero() {
   return (
@@ -14,19 +15,21 @@ function Hero() {
           <div className="max-w-4xl mx-auto px-4 my-[70px]">
             <div className="flex items-center justify-center gap-4">
               <img
-                src={HancWavePng}
+                src={HandWavePng}
                 alt="waving hand"
                 className="w-16 h-16 object-contain"
               />
-              <h1 className="text-primary text-6xl font-bold">
+              <h1 className="text-primary text-6xl font-bold text-left md:text-center">
                 Hi, I am <span className="text-[#2978b5]">Ashen Perera.</span>{" "}
               </h1>
             </div>
 
-            <h2 className="text-4xl mt-6">I am a Software Engineer</h2>
-            <div className="flex justify-center gap-4 mt-6">
+            <h2 className="text-4xl mt-6 text-left md:text-center">
+              I am a Software Engineer
+            </h2>
+            <div className="flex text-left md:text-center justify-center gap-4 mt-6">
               <p className="py-6 max-w-xl">
-                I am a dedicated software engineer with 2.5 years of experience
+                I am a dedicated software engineer with 2+ years of experience
                 designing and developing innovative web and mobile applications.
                 With a strong focus on creating efficient, scalable, and
                 user-friendly solutions, I thrive on turning complex ideas into
@@ -53,6 +56,7 @@ function Hero() {
               </a>
             </div>
             <Projects />
+            <Skills />
           </div>
         </div>
       </div>
