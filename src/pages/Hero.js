@@ -11,7 +11,7 @@ function Hero() {
     <div>
       <Navbar />
       <div className="hero min-h-screen pt-24">
-        <div className="hero-content text-center">
+        <div className="hero-content text-center dark:text-white">
           <div className="max-w-4xl mx-auto px-4 my-[70px]">
             <div className="flex items-center justify-center gap-4">
               <img
@@ -20,7 +20,10 @@ function Hero() {
                 className="w-16 h-16 object-contain"
               />
               <h1 className="text-primary text-6xl font-bold text-left md:text-center">
-                Hi, I am <span className="text-[#2978b5]">Ashen Perera.</span>{" "}
+                Hi, I am{" "}
+                <span className="dark:text-white text-[#2978b5]">
+                  Ashen Perera.
+                </span>{" "}
               </h1>
             </div>
 

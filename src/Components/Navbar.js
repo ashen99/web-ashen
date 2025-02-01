@@ -1,16 +1,24 @@
-import React, { useState } from "react";
-import { FaMoon, FaBars } from "react-icons/fa";
+import React, { useState, useEffect } from "react";
+import { FaMoon, FaSun, FaBars } from "react-icons/fa";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [theme, setTheme] = useState(
+    localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
+  );
+
+  useEffect(() => {
+    localStorage.setItem("theme", theme);
+    const localTheme = localStorage.getItem("theme");
+    document.querySelector("html").setAttribute("data-theme", localTheme);
+  }, [theme]);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   const toggleTheme = () => {
-    // Theme toggle logic will go here
-    document.documentElement.classList.toggle("dark");
+    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
   };
 
   return (
@@ -56,13 +64,17 @@ const Navbar = () => {
               </a>
             </li>
           </ul>
-
+          {/* Theme toggle button */}
           <button
             onClick={toggleTheme}
             className="btn btn-ghost btn-circle"
             aria-label="toggle theme"
           >
-            <FaMoon className="text-xl" />
+            {theme === "dark" ? (
+              <FaSun className="text-xl" />
+            ) : (
+              <FaMoon className="text-xl" />
+            )}
           </button>
 
           <button
